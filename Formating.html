@@ -1,0 +1,40 @@
+
+<html>
+    <head>
+        <title>Name Selector</title>
+      
+        <script src="Js/jquery.js"></script>
+
+    </head>
+    <body>
+    <p>First Paragraph</p>
+    <p class="mark">This is Secound Paragraph</p>
+    <p>We Teach The Following Courses</p>
+    <ul>
+    <li> C Language </li>
+    <li>C++</li>
+    <li>Java</li>
+    </ul>
+
+
+    <ul id="mark">
+        <li>Oracle</li>
+        <li>Sql </li>
+        <li>Asp.Net</li>
+    </ul>
+    <p>Go To <a href="https://www.amazon.com" target="blank">Amazon Home Page</a></p>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+   $(document).ready(function(){
+        $("p.mark").css("background", "yellow");   // Fix class selector
+        $("#mark li").css("background", "green"); // Fix ID selector
+        $("ul li").css("background", "yellow");   // Apply to all list items
+        $('a[target="_blank"]').css("background", "yellow"); // Fix a[target] selector
+   });
+</script>
+
+    </body>
+</html>

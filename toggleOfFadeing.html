@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <p>Demonstration fade Roggle() with the different Speed parqameter</p>
+    <button>
+        Click to Fade in/out boxes
+    </button>
+    <br>
+    <div id="div1" style="width:80px; height:80px;background-color: purple;"></div>
+    <br><br>
+    <div id="div2" style="width: 80px; height: 80px; background-color: green;"></div>
+    <br><br>
+    <div id="div3" style="width: 80px;height: 80px;background-color: orange;"></div>
+
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+            $("#div1").fadeToggle("slow");
+            $("#div2").fadeToggle(9000);
+            $("#div3").fadeToggle(10);
+
+            })
+           
+        })
+    </script>
+</body>
+</html>

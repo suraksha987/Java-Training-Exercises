@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Selector </title>
+    <script src="Js/jquery.js"></script>
+</head>
+<body>
+    <p>First Paragraph</p>
+    <p class="mark">Rgis is Secound  Paragraph</p>
+    <p> We  Teah  Following Courses</p>
+
+    <ul>
+        <li><span>C Language</span></li>
+        <li><span>Java</span> </li>
+        <li><span>C++</span></li>
+    </ul>
+
+    <ul id="mark">
+        <li><span>Oracle</span></li>
+        <li><span>SQL</span></li>
+        <li><span>Sql Server</span></li>
+    </ul>
+    <p>Go to <a href="https://www.amazon.com/" target="black">Home Page</a></p>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            //Highlight only paragraph element with class mark
+            $("p.mark").css("background","yellow");
+            //Highlight only span element inside the element with ID mark
+            $("#mark span").css("background","green");
+            //Highlight li element inside the ul element
+            $("ul li ").css("background","yellow");
+            //Highlight li element only inside the ul elements with id mark
+            $("#mark li").css("background","red");
+
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        p{
+        display:none;
+        padding:15px;
+        background: pink;
+    }
+    </style>
+    
+</head>
+<body>
+     <button type="button" class="to-btn">Fade To Hidden Paragraph</button>
+     <p  class="none"> KLE Technological University </p>
+     <p class="partial">Vidyanagar </p>
+     <p class="complete">Hubballi</p>
+     <script>
+        $(document).ready(function(){
+            $(".to-btn").click(function(){
+                $(".none").fadeTo("fast",1);
+                $(".partial").fadeTo("slow",0.5);
+                $(".complete").fadeTo(100000,1);
+            })
+
+        })
+     </script>
+</body>
+
+</html>
