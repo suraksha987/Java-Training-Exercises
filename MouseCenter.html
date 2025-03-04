@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <h1>
+        
+            Demo: jQuery `mouseenter()` & `mouseleave()` method
+        
+    </h1>
+
+    <div id="mydiv" style="width:100px; height:100px; background-color: red;">  </div>
+    <script>
+        $(document).ready(function(){
+            $('#mydiv').mouseenter(function(data){
+                $(this).css('background-color','green');
+
+            })
+            $('#mydiv').mouseleave(function(data){
+                $(this).css('background-color','red')
+
+            })
+
+        })
+    </script>
+</body>
+</html>

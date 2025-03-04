@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        h1{
+            display: none;
+            background-color: red;
+            padding: 20px;
+        }
+        p{
+            background-color: yellow;
+            font-size: 24px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p> This is Paragraph </p>
+    <button type="button">Toggle here</button>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("h1,p").slideToggle("slow",function(){
+                    alert("The Slide Toggle effect has completed ")
+                })
+            })
+        })
+    </script>
+</body>
+</html>

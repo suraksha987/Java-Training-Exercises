@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style>
+        p{
+            padding:10px;
+            background-color: aquamarine;
+            display: none;
+        }
+        div{
+            margin:20px 0;
+        }
+    </style>
+</head>
+<body>
+    <input type="text">
+    <div>Keypress:<span>0</span>
+    <div><strong>Note:</strong></div>
+    Enter Something Inside Input Box and see the result
+</div>
+<p>Keypress is triggered</p>
+
+<script>
+    $(document).ready(function(){
+        var i=0;
+        $("input[type='text']").keypress(function(){
+            $("span").text(++i)
+            $("p").show().fadeOut();
+        })
+    })
+</script>
+</body>
+</html>

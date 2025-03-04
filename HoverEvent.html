@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style>
+
+        p{
+            padding:20px;
+            font:20px sans-serif;
+            background-color: burlywood;
+        }
+        p.highlight{
+            background-color: aquamarine;
+            color: red;;
+
+
+        }
+    </style>
+</head>
+<body>
+    <p>Suraksha </p>
+    <p>Mummigatti</p>
+    <p>KLETECH</p>
+    <script>
+        $(document).ready(function(){
+            $("p").hover(function(){
+                $(this).addClass("highlight")
+
+            }, function(){
+                $(this).removeClass("highlight")
+            })
+        })
+    </script>
+</body>
+</html>

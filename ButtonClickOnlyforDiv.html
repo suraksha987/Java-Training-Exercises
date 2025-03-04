@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <h1>
+        Demo: Event Binding
+    </h1>
+    <div id="mydiv">
+        <input type="button" value="save" id="savebtn">
+
+        <input type="button" value="add" id="sacebtn">
+        <input type="button" value="Delete" id="delbtn">
+
+
+    </div>
+        
+
+    <script>
+        $(document).ready(function(){
+
+
+              $("#mydiv").click(function(){
+
+                alert('Button Clicked')
+
+              })
+
+           
+
+
+
+        })
+    </script>
+</body>
+</html>
